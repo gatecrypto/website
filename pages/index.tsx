@@ -26,6 +26,9 @@ export default function Home() {
         <Link href='/buy'>
           <a>How to Buy</a>
         </Link>
+        <Link href='/developers'>
+          <a>Developers</a>
+        </Link>
       </div>
       <img
         src='/icon.svg'

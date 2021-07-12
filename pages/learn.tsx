@@ -12,7 +12,7 @@ const Learn = () => {
         <div className='w-full md:w-8/12 space-y-4'>
           <p className='text-6xl'>Learn</p>
           <p className='text-2xl md:text-3xl text-blue-800'>
-            Gate is different. Designed to be used, Gate is works for everyone.
+            Gate is different. Designed to be used, Gate works for everyone.
             Built on the Binance Smart Contract chain, transferring Gate costs
             pennies - a fraction of the Ethereum network. Gate is backed by a
             real asset pool that grows as Gate is traded.
@@ -25,7 +25,7 @@ const Learn = () => {
           </p>
           <GoalCard
             num={1}
-            goal='General Revenue'
+            goal='Generate Revenue'
             text="Gate is self-sufficient. While other coins generate revenue from
               large fees, Gate thrives from promoting transactions. Fees are
               kept to a minimum so it is viable for every purchase. The revenue
