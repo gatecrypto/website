@@ -23,7 +23,7 @@ export default function Home() {
         <Link href='/roadmap'>
           <a>Roadmap</a>
         </Link>
-        <Link href='/'>
+        <Link href='/buy'>
           <a>How to Buy</a>
         </Link>
       </div>

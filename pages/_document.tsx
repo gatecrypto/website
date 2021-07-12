@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta name='description' content='Gate crypto' />
           <link rel='icon' href='/icon.svg' />
         </Head>
-        <body>
+        <body className='bg-gray-100'>
           <Main />
           <NextScript />
         </body>

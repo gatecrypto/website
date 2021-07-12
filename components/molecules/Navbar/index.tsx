@@ -47,6 +47,11 @@ const Navbar = () => {
               <p>Roadmap</p>
             </a>
           </Link>
+          <Link href='/buy'>
+            <a className='my-auto'>
+              <p>Buy</p>
+            </a>
+          </Link>
           <JoinTelegram />
         </div>
         <button onClick={() => setIsVisible(true)} className='flex md:hidden'>
@@ -71,6 +76,9 @@ const Navbar = () => {
               </Link>
               <Link href='/roadmap'>
                 <a>Roadmap</a>
+              </Link>
+              <Link href='/buy'>
+                <a>Buy</a>
               </Link>
               <JoinTelegram />
               <Link href='/'>

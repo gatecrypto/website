@@ -1,6 +1,10 @@
 import React from 'react';
 
-const PageWrapper = ({ children }: { children: JSX.Element[] }) => {
+const PageWrapper = ({
+  children,
+}: {
+  children: JSX.Element | JSX.Element[];
+}) => {
   return <div className='w-4/5 mx-auto'>{children}</div>;
 };
 
