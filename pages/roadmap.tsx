@@ -10,8 +10,8 @@ const Roadmap = () => {
 
         <div className='space-y-8 mt-8'>
           <div className='w-full md:w-3/5 space-y-4'>
-            <p className='text-3xl'>Phase 0</p>
-            <div>
+            <p className='text-3xl text-blue-800'>Phase 0</p>
+            <div className='text-gray-500'>
               <p className='text-xl'>- Develop Website</p>
               <p className='text-xl'>- Develop initial ERC20 Contract</p>
               <p className='text-xl'>
@@ -21,8 +21,8 @@ const Roadmap = () => {
             </div>
           </div>
           <div className='w-full md:w-3/5 space-y-4'>
-            <p className='text-3xl'>Phase 1</p>
-            <div>
+            <p className='text-3xl text-blue-800'>Phase 1</p>
+            <div className='text-gray-500'>
               <p className='text-xl'>
                 - Develop website Community + Development Journal pages
               </p>
@@ -39,8 +39,8 @@ const Roadmap = () => {
             </div>
           </div>
           <div className='w-full md:w-3/5 space-y-4'>
-            <p className='text-3xl'>Phase 2</p>
-            <div>
+            <p className='text-3xl text-blue-800'>Phase 2</p>
+            <div className='text-gray-500'>
               <p className='text-xl'>
                 - Publish v1 of merchant marketplace + official Gate wallet
               </p>

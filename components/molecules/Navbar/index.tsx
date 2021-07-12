@@ -20,9 +20,9 @@ const Navbar = () => {
   }, [isVisible]);
 
   return (
-    <div className='w-full md:w-4/5 mx-auto relative flex py-6'>
+    <div className='w-full md:w-4/5 mx-auto relative flex py-6 text-blue-800'>
       <Link href='/'>
-        <a className='flex w-max mx-auto space-x-2'>
+        <a className='flex w-max font-bold mx-auto space-x-2'>
           <p className='text-4xl'>Gate</p>
           <img src='/icon.svg' className='h-9 w-9 mt-auto mb-0.5' />
         </a>
