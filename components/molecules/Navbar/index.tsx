@@ -52,12 +52,21 @@ const Navbar = () => {
               <p>Buy</p>
             </a>
           </Link>
+          <Link href='/forum'>
+            <a className='my-auto'>
+              <p>Forum</p>
+            </a>
+          </Link>
           <Link href='/developers'>
             <a className='my-auto'>
               <p>Developers</p>
             </a>
           </Link>
-          <JoinTelegram />
+          <Link href='/developers'>
+            <a className='flex'>
+              <img src='/telegram.png' className='w-6 h-6 m-auto' />
+            </a>
+          </Link>
         </div>
         <button onClick={() => setIsVisible(true)} className='flex md:hidden'>
           <img src='/hamburger.png' className='w-6 h-6' />
@@ -85,10 +94,19 @@ const Navbar = () => {
               <Link href='/buy'>
                 <a>Buy</a>
               </Link>
+              <Link href='/forum'>
+                <a className='my-auto'>
+                  <p>Forum</p>
+                </a>
+              </Link>
               <Link href='/developers'>
                 <a>Developers</a>
               </Link>
-              <JoinTelegram />
+              <Link href='/developers'>
+                <a className='flex'>
+                  <img src='/telegram.png' className='w-6 h-6 m-auto' />
+                </a>
+              </Link>
               <Link href='/'>
                 <a
                   className='w-max mx-auto absolute bottom-36 left-1/2'

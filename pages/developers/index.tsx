@@ -17,7 +17,10 @@ const Index = () => {
             provide accessible technology that can inspire an ecosystem of
             software. Let's build a better future together.
           </p>
-          <div>
+          <div className='flex flex-col space-y-2'>
+            <Link href='developers/contracts'>
+              <a className='text-xl text-gray-500'>Contracts</a>
+            </Link>
             <Link href='developers/pay-with-gate'>
               <a className='text-xl text-gray-500'>Pay with Gate</a>
             </Link>
