@@ -9,7 +9,7 @@ const PhaseCard = ({
   objectiveList: string[];
 }) => {
   return (
-    <Card>
+    <Card width='w-full'>
       <p className='font-bold text-2xl md:text-3xl text-blue-800'>
         Phase {phase}
       </p>
