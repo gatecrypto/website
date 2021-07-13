@@ -7,36 +7,19 @@ import JoinTelegram from '../../atoms/JoinTelegram';
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    if (isVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }
-
-    return () => {
-      document.body.style.overflow = 'visible';
-    };
-  }, [isVisible]);
-
   return (
-    <div className='w-full md:w-4/5 mx-auto relative flex py-6 text-blue-800'>
+    <div className='w-full mx-auto md:w-4/5 relative flex py-6 text-blue-800'>
       <Link href='/'>
-        <a className='flex w-max font-bold mx-auto space-x-2'>
+        <a className='flex w-max md:mx-0 font-bold mx-auto space-x-2'>
           <p className='text-4xl'>Gate</p>
           <img src='/icon.svg' className='h-9 w-9 mt-auto mb-0.5' />
         </a>
       </Link>
       <div
-        className='absolute right-0 top-1/2 mr-4 md:mr-4'
+        className='absolute right-0 top-1/2 mr-0'
         style={{ transform: 'translate(0, -50%)' }}
       >
         <div className='hidden md:flex space-x-4 text-lg'>
-          <Link href='/'>
-            <a className='my-auto'>
-              <p>Home</p>
-            </a>
-          </Link>
           <Link href='/learn'>
             <a className='my-auto'>
               <p>Learn</p>
@@ -59,7 +42,10 @@ const Navbar = () => {
           </Link>
           <JoinTelegram />
         </div>
-        <button onClick={() => setIsVisible(true)} className='flex md:hidden'>
+        <button
+          onClick={() => setIsVisible(true)}
+          className='flex mr-4 md:hidden'
+        >
           <img src='/hamburger.png' className='w-6 h-6' />
         </button>
       </div>
@@ -67,15 +53,16 @@ const Navbar = () => {
         {isVisible && (
           <ClickAwayListener onClickAway={() => setIsVisible(false)}>
             <motion.div
-              className='fixed h-screen left-0 bg-white flex flex-col text-center text-xl space-y-8 pt-8'
-              initial={{ opacity: 0, width: 0 }}
-              animate={{ opacity: 1, width: '50%' }}
+              className='fixed shadow-nav md:hidden max-w-sm top-0 h-screen left-0 bg-white flex flex-col text-center text-xl space-y-8 pt-8'
+              initial={{ width: '55%', left: '-55%' }}
+              animate={{ left: '0' }}
               transition={{ duration: 0.25 }}
-              exit={{ opacity: 0 }}
+              exit={{ left: '-55%' }}
             >
-              <Link href='/'>
-                <a>Home</a>
-              </Link>
+              <a className='flex w-max md:mx-0 font-bold mx-auto space-x-2'>
+                <p className='text-4xl'>Gate</p>
+                <img src='/icon.svg' className='h-9 w-9 mt-auto mb-0.5' />
+              </a>
               <Link href='/learn'>
                 <a>Learn</a>
               </Link>
